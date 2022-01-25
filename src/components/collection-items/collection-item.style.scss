@@ -2,7 +2,7 @@
   width: 22vw;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 400px;
   align-items: center;
   position: relative;
 
@@ -32,11 +32,12 @@
      }
    }
   .collection-footer {
-    width: 100%;
+    width: 95%;
     height: 5%;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    margin-bottom: 14px;
 
     .name {
       width: 90%;
