@@ -13,7 +13,7 @@ import {
 } from './collection.styles';
 
 const CollectionPage = ({collection}) => {
-    console.log(collection)
+    // console.log(collection)
     const {title, items} = collection;
     return (
         <CollectionPageContainer>
@@ -27,10 +27,10 @@ const CollectionPage = ({collection}) => {
             </CollectionItemsContainer>
         </CollectionPageContainer>
     );
-}
+};
 
 const mapStateToProps = (state, ownProps) => ({
     collection: selectCollection(ownProps.match.params.collectionId)(state)
-})
+});
 
 export default connect(mapStateToProps)(CollectionPage);
